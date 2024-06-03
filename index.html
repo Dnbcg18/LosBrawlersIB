@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Temazos y Apuntes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/235992/pexels-photo-235992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            color: white;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: #4B0082; /* Color morado oscuro */
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .main-content {
+            background-color: blue; /* Color de los márgenes */
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 60px; /* Espacio para la navbar */
+        }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+            padding: 40px; /* Márgenes internos para la caja */
+            text-align: center;
+            border-radius: 10px;
+         
+        }
+        .container h1 {
+            margin-bottom: 20px;
+        }
+        .container img {
+            width: 50%; /* Ajustar el tamaño de la imagen */
+            max-width: 300px; /* Limitar el tamaño máximo de la imagen */
+            height: auto;
+            border-radius: 10px; /* Opcional: añadir bordes redondeados */
+        }
+        .content {
+            display: none;
+            padding: 2em;
+            text-align: center;
+        }
+        .content.active {
+            display: block;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .buttons-container {
+            margin-top: 20px;
+        }
+        .buttons-container a, .buttons-container button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4B0082;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporción del video 16:9 */
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporción del video 16:9 */
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        
+     
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" id="temazos-link">Temazos</a>
+        <a href="#" id="apuntes-link">Apuntes</a>
+    </div>
+
+    <div class="main-content" id="home">
+        <div class="container">
+            <h1>Los brawlers IB</h1>
+            <h1 style="font-size: 0.8em;">Hecho por Dieguín</h1>
+            <img src="https://cdn.pixabay.com/photo/2018/03/07/01/20/retail-3205035_1280.jpg" alt="Imagen principal"> 
+            <div class="video-container">
+                <!-- Cambia el valor del src del iframe con el enlace de tu video de YouTube -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_mcf-Fw8-C0?si=az8IDuSAMSy4PZgK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B0tHIgmQlXQ?si=dqAYyw-nUhRht1uv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+        </div>
+    </div>
+
+    <div class="main-content content" id="temazos">
+        <div class="container">
+            <h1>Temazos</h1>
+            <img src="https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de Temazo"> <!-- Reemplaza 'temazo.jpg' con la ruta de tu imagen -->
+            <div class="buttons-container">
+                <a href="https://suno.com/song/0fe96d8e-8f86-4c23-9f96-b665375a41d5" target="_blank">AJ V2</a>
+                <a href="https://suno.com/song/371bc50b-449d-48e9-a117-4f73eb3c3be2" target="_blank">Adela</a>
+                <a href="https://suno.com/song/8c974353-6d30-4c9c-80b5-7149a41d3120" target="_blank">Adela ft. Nacho</a>
+                <a href="https://suno.com/song/83b1bca1-dbc8-4b04-a68d-a1d09587d1ea" target="_blank">Ana Antita V3</a>
+                <a href="https://suno.com/song/c472e841-c524-4604-965e-8309ff06320e" target="_blank">Nachete V2</a>
+                <a href="https://suno.com/song/be05e9a5-9827-4a1a-bc98-94a4c7072c67" target="_blank">Lorena</a>
+                <a href="https://suno.com/song/f36c4ab1-ec3d-4525-b27a-2cf69db56da3" target="_blank">Juan Fran</a>
+                <a href="https://suno.com/song/7a025b41-efa8-4b1c-bca9-94b1154f9470" target="_blank">Huevos Fritos</a>
+            </div>
+            <div class="buttons-container">
+                <button id="back-to-home1">Volver al inicio</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content content" id="apuntes">
+        <div class="container">
+            <h1>Apuntes</h1>
+            <div class="buttons-container">
+                <a href="https://drive.google.com/file/d/1gVKYBK74TiPYeNNgxvqsd-uumJzBPLAV/view?usp=sharing" target="_blank">Apuntes Filosofía</a>
+                <a href="https://drive.google.com/file/d/1jKZsaf126H-Ckj-a6mNPglZlqaWcotHx/view?usp=sharing" target="_blank">Boy Everywhere</a>
+                <a href="https://drive.google.com/drive/folders/1Xk0npBQ7WbdirAPJQTbozKjuPcSChgos?usp=sharing" target="_blank">Dibujo Técnico</a>
+            </div>
+            <div class="buttons-container">
+                <button id="back-to-home2">Volver al inicio</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+  document.getElementById('temazos-link').addEventListener('click', function() {
+    const password = prompt('Por favor, introduce la contraseña:');
+    if (password === '1234') {
+      document.getElementById('temazos').classList.add('active');
+      document.getElementById('apuntes').classList.remove('active');
+      document.getElementById('home').style.display = 'none';
+      document.body.style.height = '100vh'; // Agregué esta línea
+    } else {
+      alert('Contraseña incorrecta');
+      document.getElementById('temazos').classList.remove('active');
+      document.getElementById('apuntes').classList.remove('active');
+      document.getElementById('home').style.display = 'block';
+      document.body.style.height = '200vh'; // Agregué esta línea
+    }
+  });
+
+  document.getElementById('apuntes-link').addEventListener('click', function() {
+    document.getElementById('apuntes').classList.add('active');
+    document.getElementById('temazos').classList.remove('active');
+    document.getElementById('home').style.display = 'none';
+    document.body.style.height = '100vh'; // Agregué esta línea
+  });
+
+  document.getElementById('back-to-home1').addEventListener('click', function() {
+    document.getElementById('temazos').classList.remove('active');
+    document.getElementById('home').style.display = 'block';
+    document.body.style.height = '200vh'; // Agregué esta línea
+  });
+
+  document.getElementById('back-to-home2').addEventListener('click', function() {
+    document.getElementById('apuntes').classList.remove('active');
+    document.getElementById('home').style.display = 'block';
+    document.body.style.height = '200vh'; // Agregué esta línea
+  });
+</script>
+    
+</body>
+</html>
